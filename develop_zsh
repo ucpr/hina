@@ -4,7 +4,7 @@
 # -----
 # If you are developing, replace "HINA_PATH" with your PATH. 
 #
-# $ source develop.sh
+# $ source develop_zsh
 #
 
 export HINA_PATH="/home/ucpr/Works/hina/hina"
