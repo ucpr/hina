@@ -1,17 +1,16 @@
-#!/usr/bin/zsh
+#!/usr/bin/bash
 #
 # usage
 # -----
 # If you are developing, replace "HINA_PATH" with your PATH. 
 #
-# $ source develop.sh
+# $ source develop_bash
 #
 
 export HINA_PATH="/home/ucpr/Works/hina/hina"
 
-autoload -Uz add-zsh-hook
 _hina_prompt() {
-  PROMPT=$($HINA_PATH)
+  PS1="$($HINA_PATH)"
 }
 
-add-zsh-hook precmd _hina_prompt
+PROMPT_COMMAND=_hina_prompt

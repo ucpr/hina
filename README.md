@@ -4,8 +4,6 @@
 
 hina is a shell theme for bash and zsh.
 
-** work in progress **
-
 ## Feature
 - git branch
 - git status
@@ -36,7 +34,17 @@ add-zsh-hook precmd _hina_prompt
 
 ### for Bash
 
-work in progress.
+please add `.bashrc` or `.bash_profile`.  
+rewrite `HINA_PATH` to suit your environment.
+```bash
+export HINA_PATH="YOUR_HINA_PATH"
+
+_hina_prompt() {
+  PS1="$($HINA_PATH)"
+}
+
+PROMPT_COMMAND=_hina_prompt
+```
 
 ## Enviroment Variables
 
