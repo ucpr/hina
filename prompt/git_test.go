@@ -1,6 +1,2 @@
 package prompt
 
-import (
-	"testing"
-)
-
