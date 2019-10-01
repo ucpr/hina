@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+#
+# usage
+# -----
+# If you are developing, replace "HINA_PATH" with your PATH. 
+#
+# $ source develop_bash
+#
+
+export HINA_PATH="/home/ucpr/Works/hina/hina"
+
+_hina_prompt() {
+  PS1="$($HINA_PATH)"
+}
+
+PROMPT_COMMAND=_hina_prompt
