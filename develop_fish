@@ -1,0 +1,20 @@
+#!/usr/local/bin/fish
+#
+# usage
+# -----
+# If you are developing, replace "HINA_PATH" with your PATH
+#
+# $ source develop_fish
+#
+
+set -x HINA_PATH "/Users/nemu_sou/Projects/hina/hina"
+
+function _hina_prompt
+  for i in ($HINA_PATH)
+    echo $i
+  end
+end
+
+function fish_prompt
+  _hina_prompt
+end
