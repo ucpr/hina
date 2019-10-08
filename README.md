@@ -46,6 +46,24 @@ _hina_prompt() {
 PROMPT_COMMAND=_hina_prompt
 ```
 
+### for Fish
+
+please add `config.fish`.  
+rewrite `HINA_PATH` to suit your environment.
+```fish
+set -x HINA_PATH "YOUR_HINA_PATH"
+
+function _hina_prompt
+  for i in ($HINA_PATH)
+    echo $i
+  end
+end
+
+function fish_prompt
+  _hina_prompt
+end
+```
+
 ## Enviroment Variables
 
 mark to represent git status
